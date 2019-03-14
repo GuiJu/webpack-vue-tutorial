@@ -21,7 +21,7 @@ npm init
 ``` 
 结束后，你会发现生成了一个package.json文件，这个文件就是用来配置前端项目的依赖的。
 
-![](./assets/package.png)
+![](../assets/package.png)
 
 现在我们来安装一个包，webpack
 
@@ -36,7 +36,7 @@ install即安装的意思，这里的--save指安装包之后，在package.json�
 
 因为我们指定在开发时候使用此包，所以它在devDependencies属性中。
 
-![](./assets/devDependencies.png)
+![](../assets/devDependencies.png)
 
 现在再试着直接安装一个包，vue
 
@@ -46,7 +46,7 @@ npm install --save vue
 
 可以看到这次没指定-dev，直接安装在dependencies中。
 
-![](./assets/dependencies.png)
+![](../assets/dependencies.png)
 
 文件夹下生成的node_modules保存了所安装的包。
 
@@ -60,7 +60,7 @@ webpack是一个Js应用程序的模板打包工具。即将js模块、或者css
 因为已经安装了webpack，现在介绍如何用。
 
 首先在文件夹下新建index.html，以及src/main.js、show.js，目录结构如下：
-![](./assets/dir.png)
+![](../assets/dir.png)
 
 在show.js写点代码：
 ```js
@@ -129,7 +129,7 @@ npm install --save-dev webpack-cli
 ```
 
 
-![](./assets/npm-start.png)
+![](../assets/npm-start.png)
 
 
 这一行的意思是，我在命令行中输入`npm start`执行时，npm会帮你执行后面的`webpack`命令
@@ -155,7 +155,7 @@ npm install --save-dev webpack-cli
 
 打开网页，发现结果显示如下：
 
-![](./assets/result.png)
+![](../assets/result.png)
 
 可能的问题：
 
