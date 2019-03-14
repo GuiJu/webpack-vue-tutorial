@@ -60,6 +60,7 @@ webpack是一个Js应用程序的模板打包工具。即将js模块、或者css
 因为已经安装了webpack，现在介绍如何用。
 
 首先在文件夹下新建index.html，以及src/main.js、show.js，目录结构如下：
+
 ![](../assets/dir.png)
 
 在show.js写点代码：
