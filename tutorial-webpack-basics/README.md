@@ -141,7 +141,7 @@ export { show };
 重新打包，看到屏幕上的内容已经变成了:
 `Zyh is a pig.Her teacher is:lingtao`。即后面的`TEACHER`变量替换为为我们配置的lingtao。
 
-本节完成后的示例在tutorial-webpack-basics文件夹中。
+本节完成后的示例代码在tutorial-webpack-basics即本文件夹中。
 
 文档资源：
 1. webpack中文官方文档：https://webpack.docschina.org/
