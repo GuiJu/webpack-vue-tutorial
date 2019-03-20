@@ -1,10 +1,12 @@
 const path = require('path');
 // 引入webpack
 const webpack = require('webpack');
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 module.exports = {
+  mode: 'development',
   // JavaScript 执行入口文件
-  entry: './src/main.js',
+  entry: './src/index.js',
   output: {
     // 把所有依赖的模块合并输出到一个 bundle.js 文件
     filename: 'bundle.js',
@@ -19,6 +21,10 @@ module.exports = {
           'style-loader',
           'css-loader'
         ]
+      },
+      {
+        test: /\.vue$/,
+        loader: 'vue-loader'
       }
     ]
   },
@@ -26,6 +32,7 @@ module.exports = {
   plugins: [
     new webpack.DefinePlugin({
       TEACHER: JSON.stringify('lingtao'),
-    })
+    }),
+    new VueLoaderPlugin()
   ]
 };
